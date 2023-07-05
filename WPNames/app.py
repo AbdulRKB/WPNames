@@ -21,10 +21,10 @@ class WPNames:
 		"""
 		Returns usernames found on site, as a list.
 		"""
-		return [x['name'] for x in getJsonData()]
+		return [x['name'] for x in self.getJsonData()]
 
 
-	def saveRawData(filename: str) -> None:
+	def saveRawData(self, filename: str) -> None:
 		"""
 		Add a filename in the parameter. Executing this method will save all data in that filename.
 		"""
